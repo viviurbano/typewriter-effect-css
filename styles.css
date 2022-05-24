@@ -1,0 +1,49 @@
+body {
+  background-color: #244;
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.typewriter {
+  letter-spacing: 0.15rem;
+  overflow: hidden;
+  border-right: 0.2rem solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 3.5s steps(40, end), blink-caret 1s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(232, 134, 6);
+  }
+}
